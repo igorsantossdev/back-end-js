@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculadora de Áreas</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="calculator-container">
+  <div class="calculator">
+    <h2>Quadrado</h2>
+    <div class="input-group">
+      <label for="square">Lado:</label>
+      <input type="number" id="square" placeholder="Lado do quadrado">
+    </div>
+    <button onclick="calculateSquareArea()">Calcular</button>
+    <div id="squareResult" class="result"></div>
+  </div>
+
+  <div class="calculator">
+    <h2>Circunferência</h2>
+    <div class="input-group">
+      <label for="circle">Diâmetro:</label>
+      <input type="number" id="circle" placeholder="Diâmetro da circunferência">
+    </div>
+    <button onclick="calculateCircleArea()">Calcular</button>
+    <div id="circleResult" class="result"></div>
+  </div>
+
+  <div class="calculator">
+    <h2>Triângulo Equilátero</h2>
+    <div class="input-group">
+      <label for="triangle">Base:</label>
+      <input type="number" id="triangle" placeholder="Base do triângulo">
+    </div>
+    <button onclick="calculateTriangleArea()">Calcular</button>
+    <div id="triangleResult" class="result"></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
